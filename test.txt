@@ -1,0 +1,30 @@
+program test
+{
+	declare x, y, a, b, c, d;
+	procedure proc1(in a, inout b)
+	{
+		declare z;
+		function func1()
+		{
+			declare w;
+            		{
+				w:=7;
+				return(w)
+			}
+		}
+		{
+			z := 9;
+			a := 4;
+			b := 10;
+			x := a + b;
+			y := x - 1;
+			print(2*y)
+		}
+	}
+	
+	{
+        	c := 13;
+        	d := c + 6;
+        	call proc1(in c, inout d);
+   	}
+}
